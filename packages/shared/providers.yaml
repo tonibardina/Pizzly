@@ -1198,6 +1198,8 @@ stripe-app:
     authorization_url: https://marketplace.stripe.com/oauth/v2/${connectionConfig.appDomain}/authorize
     token_url: https://api.stripe.com/v1/oauth/token
     disable_pkce: true
+    refresh_params:
+        grant_type: refresh_token
     proxy:
         base_url: https://api.stripe.com
 survey-monkey:
